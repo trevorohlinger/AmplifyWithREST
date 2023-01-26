@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AmplifyWithREST"
+    }
+  },
+  "defaultProject": "AmplifyWithREST",
+  "cli": {
+    "analytics": false
+  }
 }

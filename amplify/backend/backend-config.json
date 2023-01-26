@@ -1,0 +1,133 @@
+{
+  "api": {
+    "RestAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "amplifyWithRestCallbackFromBSULogin"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "amplifyWithRestRedirectBSULogin"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "amplifyWithRestRedirectOrcid"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "amplifywithrestb0ffdf87": {
+      "customAuth": false,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "amplifyWithRestCallbackFromBSULogin": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "amplifyWithRestDynamoDB": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "amplifyWithRestRedirectBSULogin": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "amplifyWithRestRedirectOrcid": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_amplifyWithRestCallbackFromBSULogin_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyWithRestCallbackFromBSULogin"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyWithRestCallbackFromBSULogin_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyWithRestCallbackFromBSULogin"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyWithRestDynamoDB_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyWithRestDynamoDB"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyWithRestDynamoDB_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyWithRestDynamoDB"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyWithRestRedirectBSULogin_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyWithRestRedirectBSULogin"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyWithRestRedirectBSULogin_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyWithRestRedirectBSULogin"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyWithRestRedirectOrcid_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyWithRestRedirectOrcid"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyWithRestRedirectOrcid_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyWithRestRedirectOrcid"
+        }
+      ]
+    }
+  },
+  "storage": {}
+}

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "paths": {
+    "/callback": {
+      "permissions": {
+        "setting": "open"
+      },
+      "lambdaFunction": "amplifyWithRestCallbackFromBSULogin"
+    },
+    "/logon": {
+      "permissions": {
+        "setting": "open"
+      },
+      "lambdaFunction": "amplifyWithRestRedirectBSULogin"
+    },
+    "/orcid": {
+      "permissions": {
+        "setting": "open"
+      },
+      "lambdaFunction": "amplifyWithRestRedirectOrcid"
+    }
+  }
+}
